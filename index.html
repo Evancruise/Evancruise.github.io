@@ -2,41 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="sec.css" rel="stylesheet">
-    <title>Document</title>
-</html>
-
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <title> 熱門風景區 </title>
+</haed>
 <body> 
-    <!-- header -->
     <header>
-        <h1>< header ><p> 可放置葉面主要標籤、LOGO </p></h1>
-    </header>
-    
-    <!-- nav -->
-    <nav class="menu">
-        < nav ><p> 此網頁的導覽區域 </p>
-        <ul>
-        </ul>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="pictures/logo.jpg">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">相關連結</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  相關景點
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">美國</a></li>
+                  <li><a class="dropdown-item" href="#">韓國</a></li>
+                  <li><a class="dropdown-item" href="#">中國</a></li>
+                  <li><a class="dropdown-item" href="#">澳洲</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">其他國家</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">更多景點</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
     </nav>
-
-    <!-- article -->
-    <article> 
-        < article > <p> 內容區 </p>
-        <!-- section -->
-        <section> 
-        < section > <p> 內容區塊-1 </p>
-        </section> 
-    </article>
-
-    <!-- aside -->
-    <aside>
-        < aside > <p> 側邊欄 </p>
-    </aside>
-
-    <!-- footer 頁尾 -->
-    <footer>
-        < footer > <p> 頁尾 </p>
-    </footer>
-
+    </div>
+    </header>
+    <section id="intro">
+        <div class="container-fluid bg-light p-5">
+        <div class="container">
+            <div class="col-md-12">
+                <h1 class="display-4"> 最熱門景點 </h1>
+                <p class="lead" > 全世界景點懶人包，國內外旅遊、必玩景點 </p>
+                <a class="btn btn-primary btn-lg" href="g"> 景點選單 </a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--介簡的區塊-->
+    <section id="second">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 text-center">
+            <h3> 推薦景點 </h3>
+            <div class="row"> </div>
+            <div class="col-md-4 text-center">
+              <img src="pictures/1.jpg">
+              <h5> 風景 </h5>
+            </div>
+            <div class="col-md-8 text-left">
+              <p class="lead"> 世界上有許多奇險又神祕的景點，有些是充滿歷史，由先人打造留存至今的遺蹟、有些則是經過大自然的鬼斧神工打造而成；今天小編就要來介紹八個世界神祕景點，你去過嗎？會想去嗎？趕快跟著小編看下去吧！</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
