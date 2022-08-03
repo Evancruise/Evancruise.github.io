@@ -136,9 +136,10 @@
     <div class="container">
       <div class='row'>
         <div class='col-md-12 text-center'>
-          <h3> 高鐵 </h3>
+          <h3> 最近熱門行程 </h3>
 
           <div class='row text-center'>
+            <h3> 高鐵 </h3>
             <div class="btn-group1" role="group" aria-label="Basic radio toggle button group">
               <input type="north1" class="btn-check" name="btn11" id="btn11" autocomplete="off" checked>
               <label class="btn btn-outline-primary" for="btn11"> 北部 </label>
@@ -344,74 +345,154 @@
   </section>
 
   <!-- 行程列表 -->
+
+  <!--飯店照片的區域-->
+  <section id='latest'>       
+    <div class="container">
+      <div class='row'>
+        <div class='col-md-12 text-center'>
+          <h3> 熱門搜尋飯店 </h3>
+         <div class='row'>
+          <div class='col-md-4 text-left'>
+            <div class='outer'>
+              <a href="https://www.tripadvisor.com.tw/Attraction_Review-g29221-d560701-Reviews-Barrier_Reef-Molokai_Hawaii.html">
+                <div class='upper'>
+                  <img src='pictures/hotel1.jpg'>
+                  </div>
+                  <div class='lower'>
+                    <span><i class="fas fa-address-book"></i> 捷絲旅 宜蘭礁溪館</span><br>
+                    <span><i class="bi bi-piggy-bank"></i> 2500 </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          
+          <div class='col-md-4 text-left'>
+            <div class='outer'>
+              <a href="https://www.tripadvisor.com.tw/Attraction_Review-g198564-d190837-Reviews-Schloss_Neuschwanstein-Schwangau_Upper_Bavaria_Bavaria.html">
+                <div class='upper'>
+                  <img src='pictures/2.jpg'>
+                  </div>
+                  <div class='lower'>
+                    <span><i class="fas fa-address-book"></i> 墾丁長灘休閒飯店 </span><br>
+                    <span><i class="bi bi-piggy-bank"></i> 4100 </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            
+            <div class='col-md-4 text-left'>
+              <div class='outer'>
+                <a href="https://www.tripadvisor.com.tw/Tourism-g45937-Elko_Nevada-Vacations.html">
+                  <div class='upper'>
+                    <img src='pictures/3.jpg'>
+                    </div>
+                    <div class='lower'>
+                      <span><i class="fas fa-address-book"></i> 慕舍酒店 </span><br>
+                      <span><i class="bi bi-piggy-bank"></i> 5200 </span>
+                    </div>
+                </a>
+              </div>
+            </div>
+        </div>
+      <div>
+    </div>
+  </section>
+
   <section id='search_table'>
     <div class='row container-fluid text-center'>
-     <h3> 行程查詢 </h3>
+     <h3> 訂房/行程資訊查詢 </h3>
+      <div class="col-sm-4 form-floating">
+       <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+         <option selected> 不限 </option>
+         <option value="1"> 基隆 </option>
+         <option value="2"> 台北 </option>
+         <option value="3"> 新北 </option>
+         <option value="4"> 桃園 </option>
+         <option value="5"> 新竹 </option>
+         <option value="6"> 苗栗 </option>
+         <option value="7"> 台中 </option>
+         <option value="8"> 雲林 </option>
+         <option value="9"> 嘉義 </option>
+         <option value="10"> 台南 </option>
+         <option value="11"> 高雄 </option>
+         <option value="12"> 屏東 </option>
+       </select>
+       <label for="floatingSelect"> 出發地 </label>
+     </div>
+ 
      <div class="col-sm-4 form-floating">
-      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-        <option selected> 不限 </option>
-        <option value="1"> 基隆 </option>
-        <option value="2"> 台北 </option>
-        <option value="3"> 新北 </option>
-        <option value="4"> 桃園 </option>
-        <option value="5"> 新竹 </option>
-        <option value="6"> 苗栗 </option>
-        <option value="7"> 台中 </option>
-        <option value="8"> 雲林 </option>
-        <option value="9"> 嘉義 </option>
-        <option value="10"> 台南 </option>
-        <option value="11"> 高雄 </option>
-        <option value="12"> 屏東 </option>
-      </select>
-      <label for="floatingSelect"> 出發地 </label>
-    </div>
+       <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+         <option selected> 不限 </option>
+         <option value="1"> 基隆 </option>
+         <option value="2"> 台北 </option>
+         <option value="3"> 新北 </option>
+         <option value="4"> 桃園 </option>
+         <option value="5"> 新竹 </option>
+         <option value="6"> 苗栗 </option>
+         <option value="7"> 台中 </option>
+         <option value="8"> 雲林 </option>
+         <option value="9"> 嘉義 </option>
+         <option value="10"> 台南 </option>
+         <option value="11"> 高雄 </option>
+         <option value="12"> 屏東 </option>
+       </select>
+       <label for="floatingSelect"> 目的地 </label>
+     </div>
+ 
+     <div class="col-sm-4 form-floating">
+       <input type="text" class="form-control" id="floatingInputValue" name="datefilter" value="" />
+       <label for="floatingInputValue"> 出發時間區間 </label>
+     </div>
+   
+     <script type="text/javascript">
+       $(function() {
+       
+         $('input[name="datefilter"]').daterangepicker({
+             autoUpdateInput: false,
+             locale: {
+                 cancelLabel: 'Clear'
+             }
+         });
+       
+         $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+             $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+         });
+       
+         $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+             $(this).val('');
+         });
+       
+       });
+       </script>
+ 
+     <div class="col-sm-4 form-floating">
+       <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+         <option selected> 0 </option>
+         <option value="1"> 1 </option>
+         <option value="2"> 2 </option>
+         <option value="3"> 3 </option>
+         <option value="4"> 4 </option>
+         <option value="5"> 5 </option>
+         <option value="6"> 6以上 </option>
+       </select>
+       <label for="floatingSelect"> 同行人數 </label>
+     </div>
+ 
+     <div class="col-sm-4 form-floating">
+       <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+         <option selected> 不限 </option>
+         <option value="1"> 腳踏車 </option>
+         <option value="2"> 觀光巴士 </option>
+         <option value="3"> 租車 </option>
+         <option value="4"> 航空 </option>
+         <option value="5"> 高鐵 </option>
+         <option value="6"> 火車 </option>
+       </select>
+       <label for="floatingSelect"> 旅程交通工具 </label>
+     </div>
 
-    <div class="col-sm-4 form-floating">
-      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-        <option selected> 不限 </option>
-        <option value="1"> 基隆 </option>
-        <option value="2"> 台北 </option>
-        <option value="3"> 新北 </option>
-        <option value="4"> 桃園 </option>
-        <option value="5"> 新竹 </option>
-        <option value="6"> 苗栗 </option>
-        <option value="7"> 台中 </option>
-        <option value="8"> 雲林 </option>
-        <option value="9"> 嘉義 </option>
-        <option value="10"> 台南 </option>
-        <option value="11"> 高雄 </option>
-        <option value="12"> 屏東 </option>
-      </select>
-      <label for="floatingSelect"> 目的地 </label>
-    </div>
-
-    <div class="col-sm-4 form-floating">
-      <input type="text" class="form-control" id="floatingInputValue" name="datefilter" value="" />
-      <label for="floatingInputValue"> 出發時間區間 </label>
-    </div>
-  
-    <script type="text/javascript">
-      $(function() {
-      
-        $('input[name="datefilter"]').daterangepicker({
-            autoUpdateInput: false,
-            locale: {
-                cancelLabel: 'Clear'
-            }
-        });
-      
-        $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
-            $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-        });
-      
-        $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
-            $(this).val('');
-        });
-      
-      });
-      </script>
-
-    <div class="col-sm-4 form-floating">
+     <div class="col-sm-4 form-floating">
       <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
         <option selected> 0 </option>
         <option value="1"> 1 </option>
@@ -421,26 +502,48 @@
         <option value="5"> 5 </option>
         <option value="6"> 6以上 </option>
       </select>
-      <label for="floatingSelect"> 同行人數 </label>
+      <label for="floatingSelect"> 旅館/飯店名稱 </label>
+     </div>
+
+      <div class="col-sm-4 form-floating">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+          <option selected> 0 </option>
+          <option value="1"> 1 </option>
+          <option value="2"> 2 </option>
+          <option value="3"> 3 </option>
+          <option value="4"> 4 </option>
+          <option value="5"> 5 </option>
+          <option value="6"> 6以上 </option>
+        </select>
+        <label for="floatingSelect"> 入住間數 </label>
+      </div>
+
+      <div class="col-sm-1 form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1"> 可預訂住宿</label>
+      </div>
+      <div class="col-sm-1 form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2"> 防疫旅館 </label>
+      </div>
+      <div class="col-sm-1 form-check">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1"> 優惠行程 </label>
+      </div>
+      <div class="col-sm-1 form-check">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1"> 美食資訊 </label>
+      </div>
+
+      <div class="col-sm-1 form-check">
+        <a href="service_options.html" class="btn btn-primary">
+          <span class="glyphicon glyphicon-th-list"></span> Search
+        </a>
+      </div>
+
     </div>
 
-    <div class="col-sm-4 form-floating">
-      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-        <option selected> 不限 </option>
-        <option value="1"> 腳踏車 </option>
-        <option value="2"> 觀光巴士 </option>
-        <option value="3"> 租車 </option>
-        <option value="4"> 航空 </option>
-        <option value="5"> 高鐵 </option>
-        <option value="6"> 火車 </option>
-      </select>
-      <label for="floatingSelect"> 旅程交通工具 </label>
     </div>
-
-    <div class="col-auto">
-      <button type="surf" class="btn btn-primary"> Search </button>
-    </div>
-  </div>
   </section>
 
   <!--footer的區塊-->
