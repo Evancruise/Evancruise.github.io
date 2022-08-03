@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/41591175b6.js" crossorigin="anonymous"></script>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
-    <title> 熱門風景區 </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/41591175b6.js" crossorigin="anonymous"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+  <title> 熱門風景區 </title>
 </haed>
 
 <body> 
@@ -73,15 +79,14 @@
               </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
   </nav>
   </div>
   </header>
+
+  <!-- Javascript連結 -->
+  <!-- <script src="js/calendar.js"> </script> -->
 
   <div class="calendar">
     <div class="calendar-header">
@@ -122,8 +127,322 @@
     </div>  
   </div>
 
-  <!-- Javascript連結 -->
+  <!-- 設計月曆的Javascript連結 -->
   <script src="js/script.js"> </script>
+
+  <!-- 最近活動 -->
+  <section id='latest'>       
+
+    <div class="container">
+      <div class='row'>
+        <div class='col-md-12 text-center'>
+          <h3> 高鐵 </h3>
+
+          <div class='row text-center'>
+            <div class="btn-group1" role="group" aria-label="Basic radio toggle button group">
+              <input type="north1" class="btn-check" name="btn11" id="btn11" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" for="btn11"> 北部 </label>
+            
+              <input type="middle1" class="btn-check" name="btn22" id="btn22" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btn22"> 中部 </label>
+            
+              <input type="sourth1" class="btn-check" name="btn33" id="btn33" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btn33"> 南部 </label>
+            </div>
+          </div>
+
+         <div class='row'>
+          <div class='col-md-4 text-left'>
+            <div class='outer'>
+              <a href="https://www.tripadvisor.com.tw/Attraction_Review-g29221-d560701-Reviews-Barrier_Reef-Molokai_Hawaii.html">
+                <div class='upper'>
+                  <img src='pictures/north1.jpg'>
+                  </div>
+                  <div class='lower'>
+                    <h3>行程時間 - 9月</h3>
+                    <span><i class="fas fa-address-book"></i> 台北西門意舍酒店 一泊二食 </span><br>
+                    <span><i class="far fa-clock"></i> Sep 5, 2022</span><br>
+                    <span><i class="bi bi-piggy-bank"></i> 1600 </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          
+          <div class='col-md-4 text-left'>
+            <div class='outer'>
+              <a href="https://www.tripadvisor.com.tw/Attraction_Review-g198564-d190837-Reviews-Schloss_Neuschwanstein-Schwangau_Upper_Bavaria_Bavaria.html">
+                <div class='upper'>
+                  <img src='pictures/north2.jpg'>
+                  </div>
+                  <div class='lower'>
+                    <h3>行程時間 - 9月</h3>
+                    <span><i class="fas fa-address-book"></i> 台北慕舍酒店 七大酒莊聯名微醺 </span><br>
+                    <span><i class="far fa-clock"></i> Sep 18, 2022 </span><br>
+                    <span><i class="bi bi-piggy-bank"></i> 2200 </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            
+            <div class='col-md-4 text-left'>
+              <div class='outer'>
+                <a href="https://www.tripadvisor.com.tw/Tourism-g45937-Elko_Nevada-Vacations.html">
+                  <div class='upper'>
+                    <img src='pictures/north3.jpg'>
+                    </div>
+                    <div class='lower'>
+                      <h3>行程時間 - 11月</h3>
+                      <span><i class="fas fa-address-book"></i> 新北淡水福容大飯店 盡收淡海景緻 </span><br>
+                      <span><i class="far fa-clock"></i> Nov 15, 2022 </span><br>
+                      <span><i class="bi bi-piggy-bank"></i> 2400 </span>
+                    </div>
+                </a>
+              </div>
+            </div>
+        </div>
+      <div>
+
+        <div class='row'>
+          <div class='col-md-12 text-center'>
+            <h3> 火車 </h3>
+
+            <div class='row text-center'>
+              <div class="btn-group2" role="group" aria-label="Basic radio toggle button group">
+                <input type="north1" class="btn-check" name="btn111" id="btn111" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btn111"> 北部 </label>
+              
+                <input type="middle1" class="btn-check" name="btn222" id="btn222" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btn222"> 中部 </label>
+              
+                <input type="sourth1" class="btn-check" name="btn333" id="btn3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btn333"> 南部 </label>
+          
+                <input type="east1" class="btn-check" name="btn444" id="btn444" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btn444"> 東部 </label>
+            </div>
+
+           <div class='row'>
+            <div class='col-md-4 text-left'>
+              <div class='outer'>
+                <a href="https://www.tripadvisor.com.tw/Attraction_Review-g29221-d560701-Reviews-Barrier_Reef-Molokai_Hawaii.html">
+                  <div class='upper'>
+                    <img src='pictures/north4.jpg'>
+                    </div>
+                    <div class='lower'>
+                      <h3>行程時間 - 8月</h3>
+                      <span><i class="fas fa-address-book"></i> 桃園火車站飯店自選 </span><br>
+                      <span><i class="far fa-clock"></i> Aug 28, 2022 </span><br>
+                      <span><i class="bi bi-piggy-bank"></i> 700 </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            
+            <div class='col-md-4 text-left'>
+              <div class='outer'>
+                <a href="https://www.tripadvisor.com.tw/Attraction_Review-g198564-d190837-Reviews-Schloss_Neuschwanstein-Schwangau_Upper_Bavaria_Bavaria.html">
+                  <div class='upper'>
+                    <img src='pictures/north5.jpg'>
+                    </div>
+                    <div class='lower'>
+                      <h3> 行程時間 - 9月 </h3>
+                      <span><i class="fas fa-address-book"></i> 中壢火車站飯店自選 </span><br>
+                      <span><i class="far fa-clock"></i> Sep 24, 2022 </span><br>
+                      <span><i class="bi bi-piggy-bank"></i> 800 </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              <div class='col-md-4 text-left'>
+                <div class='outer'>
+                  <a href="https://www.tripadvisor.com.tw/Tourism-g45937-Elko_Nevada-Vacations.html">
+                    <div class='upper'>
+                      <img src='pictures/north6.jpg'>
+                      </div>
+                      <div class='lower'>
+                        <h3>行程時間 - 10月</h3>
+                        <span><i class="fas fa-address-book"></i> 新竹火車站飯店自選 </span><br>
+                        <span><i class="far fa-clock"></i> Oct 18, 2022 </span><br>
+                        <span><i class="bi bi-piggy-bank"></i> 1100 </span>
+                      </div>
+                  </a>
+                </div>
+              </div>
+          </div>
+        <div>
+
+        <div class='row'>
+            <div class='col-md-12 text-center'>
+              <h3> 一般公路 </h3>
+
+              <div class='row text-center'>
+                <div class="btn-group3" role="group" aria-label="Basic radio toggle button group">
+                
+                  <input type="sourth1" class="btn-check" name="btn3333" id="btn3333" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btn3333"> 南部 </label>
+            
+                  <input type="east1" class="btn-check" name="btn4444" id="btn4444" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btn4444"> 東部 </label>
+            
+                  <input type="outland1" class="btn-check" name="btn5555" id="btn5555" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btn5555"> 離島 </label>
+                </div>
+              </div>
+
+             <div class='row'>
+              <div class='col-md-4 text-left'>
+                <div class='outer'>
+                  <a href="https://www.tripadvisor.com.tw/Attraction_Review-g29221-d560701-Reviews-Barrier_Reef-Molokai_Hawaii.html">
+                    <div class='upper'>
+                      <img src='pictures/south7.jpg'>
+                      </div>
+                      <div class='lower'>
+                        <h3>行程時間 - 7月</h3>
+                        <span><i class="fas fa-address-book"></i> 台南和運自駕、住宿任選 </span><br>
+                        <span><i class="far fa-clock"></i> Jul 27, 2022 </span><br>
+                        <span><i class="bi bi-piggy-bank"></i> 2700 </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              
+              <div class='col-md-4 text-left'>
+                <div class='outer'>
+                  <a href="https://www.tripadvisor.com.tw/Attraction_Review-g198564-d190837-Reviews-Schloss_Neuschwanstein-Schwangau_Upper_Bavaria_Bavaria.html">
+                    <div class='upper'>
+                      <img src='pictures/south8.jpg'>
+                      </div>
+                      <div class='lower'>
+                        <h3>行程時間 - 9月</h3>
+                        <span><i class="fas fa-address-book"></i> 嘉義台南雙城和運租車、住宿自選 </span><br>
+                        <span><i class="far fa-clock"></i> Sep 14, 2022</span><br>
+                        <span><i class="bi bi-piggy-bank"></i> 2350 </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                
+                <div class='col-md-4 text-left'>
+                  <div class='outer'>
+                    <a href="https://www.tripadvisor.com.tw/Tourism-g45937-Elko_Nevada-Vacations.html">
+                      <div class='upper'>
+                        <img src='pictures/south9.jpg'>
+                        </div>
+                        <div class='lower'>
+                          <h3>行程時間 - 12月</h3>
+                          <span><i class="fas fa-address-book"></i> 嘉義格上租車自駕、阿里山住宿 </span><br>
+                          <span><i class="far fa-clock"></i> Dec 09, 2022</span><br>
+                          <span><i class="bi bi-piggy-bank"></i> 2500 </span>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+            </div>
+        <div>
+    </div>
+  </section>
+
+  <!-- 行程列表 -->
+  <section id='search_table'>
+    <div class='row container-fluid text-center'>
+     <h3> 行程查詢 </h3>
+     <div class="col-sm-4 form-floating">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected> 不限 </option>
+        <option value="1"> 基隆 </option>
+        <option value="2"> 台北 </option>
+        <option value="3"> 新北 </option>
+        <option value="4"> 桃園 </option>
+        <option value="5"> 新竹 </option>
+        <option value="6"> 苗栗 </option>
+        <option value="7"> 台中 </option>
+        <option value="8"> 雲林 </option>
+        <option value="9"> 嘉義 </option>
+        <option value="10"> 台南 </option>
+        <option value="11"> 高雄 </option>
+        <option value="12"> 屏東 </option>
+      </select>
+      <label for="floatingSelect"> 出發地 </label>
+    </div>
+
+    <div class="col-sm-4 form-floating">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected> 不限 </option>
+        <option value="1"> 基隆 </option>
+        <option value="2"> 台北 </option>
+        <option value="3"> 新北 </option>
+        <option value="4"> 桃園 </option>
+        <option value="5"> 新竹 </option>
+        <option value="6"> 苗栗 </option>
+        <option value="7"> 台中 </option>
+        <option value="8"> 雲林 </option>
+        <option value="9"> 嘉義 </option>
+        <option value="10"> 台南 </option>
+        <option value="11"> 高雄 </option>
+        <option value="12"> 屏東 </option>
+      </select>
+      <label for="floatingSelect"> 目的地 </label>
+    </div>
+
+    <div class="col-sm-4 form-floating">
+      <input type="text" class="form-control" id="floatingInputValue" name="datefilter" value="" />
+      <label for="floatingInputValue"> 出發時間區間 </label>
+    </div>
+  
+    <script type="text/javascript">
+      $(function() {
+      
+        $('input[name="datefilter"]').daterangepicker({
+            autoUpdateInput: false,
+            locale: {
+                cancelLabel: 'Clear'
+            }
+        });
+      
+        $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+            $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+        });
+      
+        $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+            $(this).val('');
+        });
+      
+      });
+      </script>
+
+    <div class="col-sm-4 form-floating">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected> 0 </option>
+        <option value="1"> 1 </option>
+        <option value="2"> 2 </option>
+        <option value="3"> 3 </option>
+        <option value="4"> 4 </option>
+        <option value="5"> 5 </option>
+        <option value="6"> 6以上 </option>
+      </select>
+      <label for="floatingSelect"> 同行人數 </label>
+    </div>
+
+    <div class="col-sm-4 form-floating">
+      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected> 不限 </option>
+        <option value="1"> 腳踏車 </option>
+        <option value="2"> 觀光巴士 </option>
+        <option value="3"> 租車 </option>
+        <option value="4"> 航空 </option>
+        <option value="5"> 高鐵 </option>
+        <option value="6"> 火車 </option>
+      </select>
+      <label for="floatingSelect"> 旅程交通工具 </label>
+    </div>
+
+    <div class="col-auto">
+      <button type="surf" class="btn btn-primary"> Search </button>
+    </div>
+  </div>
+  </section>
+
   <!--footer的區塊-->
   <footer>
     <div class="container">
