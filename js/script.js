@@ -1,6 +1,6 @@
 // 每個月的名稱
 
-const month_names = ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', ' 十月', '十一月', '十二月']
+const month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', ' October', 'November', 'December']
 
 
 // 設定閏月的規則 https://xiwan.io/archive/most-efficient-leap-year-algorithm.html
@@ -33,7 +33,9 @@ generateCalendar = (month, year) => {
     // 抓現在的日期
 
     let currDate = new Date()
-    if (!month) month = currDate.getMonth()
+    //month = 0
+    //year = 2022
+    if (!month) month = currDate.getMonth()-7
     if (!year) year = currDate.getFullYear()
 
     let curr_month = `${month_names[month]}`
@@ -43,8 +45,9 @@ generateCalendar = (month, year) => {
 
     let first_day = new Date(year, month, 1)
 
-    if (month === '一月')
-        for (let i = 0; i <= 31 + first_day.getDay() - 1; i++) {
+    let spec_day1 = new Date(2022, 11, 5)
+
+    for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
             let day = document.createElement('div')
             if (i >= first_day.getDay()) {
                 day.classList.add('calendar-day-hover')
@@ -56,29 +59,14 @@ generateCalendar = (month, year) => {
                 if (i - first_day.getDay() + 1 === currDate.getDate() && year === currDate.getFullYear() && month === currDate.getMonth()) {
                     day.classList.add('curr-date')
                 }
-            }
-            calendar_days.appendChild(day)
-        }
-    else
-        for (let i = 0; i <= days_of_month[month] + first_day.getDay() - 1; i++) {
-            let day = document.createElement('div')
-            if (i >= first_day.getDay()) {
-                day.classList.add('calendar-day-hover')
-                day.innerHTML = i - first_day.getDay() + 1
-                day.innerHTML += `<span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>`
-                if (i - first_day.getDay() + 1 === currDate.getDate() && year === currDate.getFullYear() && month === currDate.getMonth()) {
-                    day.classList.add('curr-date')
+
+                if (i - first_day.getDay() + 1 === spec_day1.getDate() && year === spec_day1.getFullYear() && month === spec_day1.getMonth()) {
+                    day.classList.add('spec-date')
                 }
             }
             calendar_days.appendChild(day)
-        }
+    }
 }
-
-
-
 
 // 秀出每個月份
 
@@ -104,12 +92,10 @@ month_picker.onclick = () => {
     month_list.classList.add('show')
 }
 
+let currDate = new Date()
 
-
-let currDaten = new Date()
-
-let curr_month = { value: currDaten.getMonth() }
-let curr_year = { value: currDaten.getFullYear() }
+let curr_month = { value: currDate.getMonth() }
+let curr_year = { value: currDate.getFullYear() }
 
 generateCalendar(curr_month.value, curr_year.value)
 
@@ -123,39 +109,18 @@ document.querySelector('#next-year').onclick = () => {
     generateCalendar(curr_month.value, curr_year.value)
 }
 
+document.querySelector('#prev-month').onclick = () => {
+    if (curr_month.value-1 < 0)
+        curr_month.value = 11
+    else
+        --curr_month.value
+    generateCalendar(curr_month.value, curr_year.value)
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// 產生年月
-
-
-// 抓現在的日期
-
-
-// 秀出每個月份
-
-
-
-// 按下月份的時候會跳出各個月份
+document.querySelector('#next-month').onclick = () => {
+    if (curr_month.value+1 >= 12)
+        curr_month.value = 0
+    else
+        ++curr_month.value
+    generateCalendar(curr_month.value, curr_year.value)
+}
