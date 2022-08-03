@@ -13,6 +13,17 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+  <title> 熱門風景區 </title>
+
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   <!-- DataTable 連結 -->
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.2/css/jquery.dataTables.css">
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.js"></script>
@@ -20,14 +31,6 @@
   <!-- CSS 連結 -->
   <link rel="stylesheet" href="dataTable.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
-  
-  <title> 熱門風景區 </title>
 </haed>
 
 <body> 
@@ -407,364 +410,380 @@
       <div>
     </div>
   </section>
-
-  <section id="table">
-    <div class='col-md-12 text-center'>
-      <h3> 行程快速查詢 </h3>
-       <table id="table_id" class="display compact hover cell-border stripe responsive nowrap">
-        <thead>
-         <tr>
-            <!-- 欄位標題 -->
-            <th width="10px"> 出發時間 </th>
-            <th width="10px"> 結束時間 </th>
-            <th> 行程名稱 </th>
-            <th> 地區 </th>
-            <th> 價位 </th>
-         </tr>
-        </thead>
-       <tbody>
-        <!-- 資料內容 -->
-        <tr>
-            <td> 2022/08/18 </td>
-            <td> 2022/08/26 </td>
-            <td> 初次窺探基隆嶼、田園農家樂 </td>
-            <td> 基隆、綠島 </td>
-            <td> 999 </td>
-
-        </tr>
-        <tr>
-            <td> 2022/09/19 </td>
-            <td> 2022/09/20 </td>
-            <td> 小琉球環島 </td>
-            <td> 台南 </td>
-            <td> 3599 </td>
-        </tr>
-        <tr>
-            <td> 2022/10/23 </td>
-            <td> 2022/10/26 </td>
-            <td> 台東熱氣球嘉年華、花東海岸新社梯田、親不知子斷崖開心農場三日 </td>
-            <td> 花蓮、台東 </td>
-            <td> 2000 </td>
-
-        </tr>
-        <tr>
-            <td> 2022/10/29 </td>
-            <td> 2022/10/31 </td>
-            <td> 台東池上藝術鐵花村、多良無敵海景、牡丹水上草原、墾丁逍遙三日遊</td>
-            <td> 墾丁、台東 </td>
-            <td> 2310 </td>
-        </tr>
-        <tr>
-            <td> 2022/11/12 </td>
-            <td> 2022/11/20 </td>
-            <td> 暢完水上活動一日遊 </td>
-            <td> 澎湖 </td>
-            <td> 2400 </td>
-        </tr>
-        <tr>
-            <td> 2022/9/18 </td>
-            <td> 2022/9/25 </td>
-            <td> 向日葵賞花手作體驗 </td>
-            <td> 台中 </td>
-            <td> 2300 </td>
-
-        </tr>
-        <tr>
-            <td> 2022/10/4 </td>
-            <td> 2022/10/10 </td>
-            <td> 碧海藍天度假趣 夜宿海生館‧沙灘度假三日</td>
-            <td> 小琉球 </td>
-            <td> 4100 </td>
-        </tr>
-        <tr>
-            <td> 2022/11/10 </td>
-            <td> 2022/11/18 </td>
-            <td> 季節限定環島遊、台東熱氣球嘉年華+花蓮輕鬆選 豐富三日遊 </td>
-            <td> 台東、高雄 </td>
-            <td> 3400 </td>
-        </tr>
-        <tr>
-            <td> 2022/9/25 </td>
-            <td> 2022/9/30 </td>
-            <td> 花東．遠雄海洋公園夜未眠+熱氣球嘉年華三日遊 </td>
-            <td> 花蓮、台東 </td>
-            <td> 4000 </td>
-
-        </tr>
-    </tbody>
-</table>
+    
+  <!--
+  <div style="margin-left:200px;margin-top:100px;width:1000px;">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">條件查詢</h3>
+        </div>
+        <div class="panel-body">
+            <div style="display:inline-block;">
+                <div style="float:left;padding:6px;">
+                    <span>姓名：</span>
+                </div>
+                <div style="float:left;">
+                    <input id="name" class="form-control" style="width:200px;" placeholder="請輸入姓名" />
+                </div>
+                <div style="float:left;padding:6px;">
+                    <span>性別：</span>
+                </div>
+                <div style="float:left;">
+                    <select id="gender" class="form-control" style="width:200px;">
+                        <option value="">請選擇</option>
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                </div>
+                <div style="float:left;margin-left:20px;">
+                    <button id="query" class="btn btn-primary">查詢</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table id="table"></table>
   </div>
-  </section>
+  -->
+
+    <table id="table_id" class="display compact hover cell-border stripe responsive nowrap">
+        <thead>
+            <tr>
+                <!-- 欄位標題 -->
+                <th width="10px"> 行程時間 </th>
+                <th> 行程名稱 </th>
+                <th> 地區 </th>
+                <th> 價位 </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 資料內容 -->
+            <tr>
+                <td> 2022/08/18 </td>
+                <td> 初次窺探基隆嶼、田園農家樂 </td>
+                <td> 基隆、綠島 </td>
+                <td> 999 </td>
+
+            </tr>
+            <tr>
+                <td> 2022/09/19 </td>
+                <td> 小琉球環島 </td>
+                <td> 台南 </td>
+                <td> 3599 </td>
+            </tr>
+            <tr>
+                <td> 2022/10/23 </td>
+                <td> 台東熱氣球嘉年華、花東海岸新社梯田、親不知子斷崖開心農場三日 </td>
+                <td> 花蓮、台東 </td>
+                <td> 2000 </td>
+
+            </tr>
+            <tr>
+                <td> 2022/10/29 </td>
+                <td> 台東池上藝術鐵花村、多良無敵海景、牡丹水上草原、墾丁逍遙三日遊</td>
+                <td> 墾丁、台東 </td>
+                <td> 2310 </td>
+            </tr>
+            <tr>
+                <td> 2022/11/12 </td>
+                <td> 暢完水上活動一日遊 </td>
+                <td> 澎湖 </td>
+                <td> 2400 </td>
+            </tr>
+            <tr>
+                <td> 2022/9/18 </td>
+                <td> 向日葵賞花手作體驗 </td>
+                <td> 台中 </td>
+                <td> 2300 </td>
+
+            </tr>
+            <tr>
+                <td> 2022/10/4 </td>
+                <td> 碧海藍天度假趣 夜宿海生館‧沙灘度假三日</td>
+                <td> 小琉球 </td>
+                <td> 4100 </td>
+            </tr>
+            <tr>
+                <td> 2022/11/10 </td>
+                <td> 季節限定環島遊、台東熱氣球嘉年華+花蓮輕鬆選 豐富三日遊 </td>
+                <td> 台東、高雄 </td>
+                <td> 3400 </td>
+            </tr>
+            <tr>
+                <td> 2022/9/25 </td>
+                <td> 花東．遠雄海洋公園夜未眠+熱氣球嘉年華三日遊 </td>
+                <td> 花蓮、台東 </td>
+                <td> 4000 </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+</section>
 
   <script>
-  $(document).ready(function() {
-            $('#table_id').DataTable({
-
-                // 中文化
-                
-                "language": {
-                    /*
-                    "processing": "處理中...",
-                    "loadingRecords": "載入中...",
-                    "lengthMenu": "顯示 _MENU_ 項結果",
-                    "zeroRecords": "沒有符合的結果",
-                    "info": "顯示第 _START_ 至 _END_ 項結果，共 _TOTAL_ 項",
-                    "infoEmpty": "顯示第 0 至 0 項結果，共 0 項",
-                    "infoFiltered": "(從 _MAX_ 項結果中過濾)",
-                    "search": "搜尋",
-                    "paginate": {
-                        "first": "第一頁",
-                        "previous": "上一頁",
-                        "next": "下一頁",
-                        "last": "最後一頁"
-                    },
-                    "aria": {
-                        "sortAscending": ": 升冪排列",
-                        "sortDescending": ": 降冪排列"
-                    },
-                    "emptyTable": "目前沒有資料",
-                    "datetime": {
-                        "previous": "上一頁",
-                        "next": "下一頁",
-                        "hours": "時",
-                        "minutes": "分",
-                        "seconds": "秒",
-                        "amPm": [
-                            "上午",
-                            "下午"
-                        ]
-                    },
-                    */
-                    "searchBuilder": {
-                        "add": "新增條件",
-                        "condition": "條件",
-                        "deleteTitle": "刪除過濾條件",
-                        "button": {
-                            "_": "複合查詢 (%d)",
-                            "0": "複合查詢"
-                        },
-                        "clearAll": "清空",
-                        "conditions": {
-                            "array": {
-                                "contains": "含有",
-                                "empty": "為空",
-                                "equals": "等於",
-                                "not": "不為",
-                                "notEmpty": "不為空"
-                            },
-                            "date": {
-                                "after": "大於",
-                                "before": "小於",
-                                "between": "在其中",
-                                "empty": "為空",
-                                "equals": "等於",
-                                "not": "不為",
-                                "notBetween": "不在其中",
-                                "notEmpty": "不為空"
-                            },
-                            "number": {
-                                "between": "在其中",
-                                "empty": "為空",
-                                "equals": "等於",
-                                "gt": "大於",
-                                "gte": "大於等於",
-                                "lt": "小於",
-                                "lte": "小於等於",
-                                "not": "不為",
-                                "notBetween": "不在其中",
-                                "notEmpty": "不為空"
-                            },
-                            "string": {
-                                "contains": "含有",
-                                "empty": "為空",
-                                "endsWith": "字尾為",
-                                "equals": "等於",
-                                "not": "不為",
-                                "notEmpty": "不為空",
-                                "startsWith": "字首為"
-                            }
-                        },
-                        "data": "欄位",
-                        "leftTitle": "群組條件",
-                        "logicAnd": "且",
-                        "logicOr": "或",
-                        "rightTitle": "取消群組",
-                        "title": {
-                            "_": "複合查詢 (%d)",
-                            "0": "複合查詢"
-                        },
-                        "value": "內容"
-                    },
+    $(document).ready(function() {
+                $('#table_id').DataTable({
+    
+                    // 中文化
                     
-                    /*
-                    "editor": {
-                        "close": "關閉",
-                        "create": {
-                            "button": "新增",
-                            "title": "建立新項目",
-                            "submit": "建立"
+                    "language": {
+                        /*
+                        "processing": "處理中...",
+                        "loadingRecords": "載入中...",
+                        "lengthMenu": "顯示 _MENU_ 項結果",
+                        "zeroRecords": "沒有符合的結果",
+                        "info": "顯示第 _START_ 至 _END_ 項結果，共 _TOTAL_ 項",
+                        "infoEmpty": "顯示第 0 至 0 項結果，共 0 項",
+                        "infoFiltered": "(從 _MAX_ 項結果中過濾)",
+                        "search": "搜尋",
+                        "paginate": {
+                            "first": "第一頁",
+                            "previous": "上一頁",
+                            "next": "下一頁",
+                            "last": "最後一頁"
                         },
-                        "edit": {
-                            "button": "編輯",
-                            "title": "編輯項目",
-                            "submit": "更新"
+                        "aria": {
+                            "sortAscending": ": 升冪排列",
+                            "sortDescending": ": 降冪排列"
                         },
-                        "remove": {
-                            "button": "刪除",
-                            "title": "刪除",
-                            "submit": "刪除",
-                            "confirm": {
-                                "_": "您確定要刪除 %d 筆資料嗎？",
-                                "1": "您確定要刪除 %d 筆資料嗎？"
+                        "emptyTable": "目前沒有資料",
+                        "datetime": {
+                            "previous": "上一頁",
+                            "next": "下一頁",
+                            "hours": "時",
+                            "minutes": "分",
+                            "seconds": "秒",
+                            "amPm": [
+                                "上午",
+                                "下午"
+                            ]
+                        },
+                        */
+                        "searchBuilder": {
+                            "add": "新增條件",
+                            "condition": "條件",
+                            "deleteTitle": "刪除過濾條件",
+                            "button": {
+                                "_": "複合查詢 (%d)",
+                                "0": "複合查詢"
+                            },
+                            "clearAll": "清空",
+                            "conditions": {
+                                "array": {
+                                    "contains": "含有",
+                                    "empty": "為空",
+                                    "equals": "等於",
+                                    "not": "不為",
+                                    "notEmpty": "不為空"
+                                },
+                                "date": {
+                                    "after": "大於",
+                                    "before": "小於",
+                                    "between": "在其中",
+                                    "empty": "為空",
+                                    "equals": "等於",
+                                    "not": "不為",
+                                    "notBetween": "不在其中",
+                                    "notEmpty": "不為空"
+                                },
+                                "number": {
+                                    "between": "在其中",
+                                    "empty": "為空",
+                                    "equals": "等於",
+                                    "gt": "大於",
+                                    "gte": "大於等於",
+                                    "lt": "小於",
+                                    "lte": "小於等於",
+                                    "not": "不為",
+                                    "notBetween": "不在其中",
+                                    "notEmpty": "不為空"
+                                },
+                                "string": {
+                                    "contains": "含有",
+                                    "empty": "為空",
+                                    "endsWith": "字尾為",
+                                    "equals": "等於",
+                                    "not": "不為",
+                                    "notEmpty": "不為空",
+                                    "startsWith": "字首為"
+                                }
+                            },
+                            "data": "欄位",
+                            "leftTitle": "群組條件",
+                            "logicAnd": "且",
+                            "logicOr": "或",
+                            "rightTitle": "取消群組",
+                            "title": {
+                                "_": "複合查詢 (%d)",
+                                "0": "複合查詢"
+                            },
+                            "value": "內容"
+                        },
+                        
+                        /*
+                        "editor": {
+                            "close": "關閉",
+                            "create": {
+                                "button": "新增",
+                                "title": "建立新項目",
+                                "submit": "建立"
+                            },
+                            "edit": {
+                                "button": "編輯",
+                                "title": "編輯項目",
+                                "submit": "更新"
+                            },
+                            "remove": {
+                                "button": "刪除",
+                                "title": "刪除",
+                                "submit": "刪除",
+                                "confirm": {
+                                    "_": "您確定要刪除 %d 筆資料嗎？",
+                                    "1": "您確定要刪除 %d 筆資料嗎？"
+                                }
+                            },
+                            "multi": {
+                                "restore": "回復修改",
+                                "title": "每行有不同的價值",
+                                "info": "您選擇了多個項目，每項目都有不同的價值。如果您想所有選擇的項目都用同一個價值，可以在這裏輸入一個價值。要不然它們會保留原本各自的價值",
+                                "noMulti": "此列不容許同時編輯多個項目"
+                            },
+                            "error": {
+                                "system": "系統發生錯誤(更多資訊)"
                             }
                         },
-                        "multi": {
-                            "restore": "回復修改",
-                            "title": "每行有不同的價值",
-                            "info": "您選擇了多個項目，每項目都有不同的價值。如果您想所有選擇的項目都用同一個價值，可以在這裏輸入一個價值。要不然它們會保留原本各自的價值",
-                            "noMulti": "此列不容許同時編輯多個項目"
+                        */
+                        "autoFill": {
+                            "cancel": "取消"
                         },
-                        "error": {
-                            "system": "系統發生錯誤(更多資訊)"
-                        }
-                    },
-                    */
-                    "autoFill": {
-                        "cancel": "取消"
-                    },
-                    "buttons": {
-                        "copySuccess": {
-                            "_": "複製了 %d 筆資料",
-                            "1": "複製了 1 筆資料"
+                        "buttons": {
+                            "copySuccess": {
+                                "_": "複製了 %d 筆資料",
+                                "1": "複製了 1 筆資料"
+                            },
+                            "copyTitle": "已經複製到剪貼簿",
+                            "excel": "Excel",
+                            "pdf": "PDF",
+                            "print": "列印",
+                            "copy": "複製"
                         },
-                        "copyTitle": "已經複製到剪貼簿",
-                        "excel": "Excel",
-                        "pdf": "PDF",
-                        "print": "列印",
-                        "copy": "複製"
-                    },
-                    /*
-                    "searchPanes": {
-                        "collapse": {
-                            "_": "搜尋面版 (%d)",
-                            "0": "搜尋面版"
+                        /*
+                        "searchPanes": {
+                            "collapse": {
+                                "_": "搜尋面版 (%d)",
+                                "0": "搜尋面版"
+                            },
+                            "emptyPanes": "沒搜尋面版",
+                            "loadMessage": "載入搜尋面版中...",
+                            "clearMessage": "清空"
                         },
-                        "emptyPanes": "沒搜尋面版",
-                        "loadMessage": "載入搜尋面版中...",
-                        "clearMessage": "清空"
-                    },
-                    */
-                    "select": {
-                        "rows": {
-                            "_": "%d 列已選擇",
-                            "1": "%d 列已選擇"
+                        */
+                        "select": {
+                            "rows": {
+                                "_": "%d 列已選擇",
+                                "1": "%d 列已選擇"
+                            }
                         }
                     }
-                }
-
-            });
-        });    
+    
+                });
+            });    
   </script>
 
 <section id='search_table'>
-  <div class='row container-fluid text-center'>
-   <h3> 旅遊/訂房報名 </h3>
-    <div class="col-sm-4 form-floating">
-     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-       <option selected> 不限 </option>
-       <option value="1"> 基隆 </option>
-       <option value="2"> 台北 </option>
-       <option value="3"> 新北 </option>
-       <option value="4"> 桃園 </option>
-       <option value="5"> 新竹 </option>
-       <option value="6"> 苗栗 </option>
-       <option value="7"> 台中 </option>
-       <option value="8"> 雲林 </option>
-       <option value="9"> 嘉義 </option>
-       <option value="10"> 台南 </option>
-       <option value="11"> 高雄 </option>
-       <option value="12"> 屏東 </option>
-     </select>
-     <label for="floatingSelect"> 出發地 </label>
-   </div>
-
-   <div class="col-sm-4 form-floating">
-     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-       <option selected> 不限 </option>
-       <option value="1"> 基隆 </option>
-       <option value="2"> 台北 </option>
-       <option value="3"> 新北 </option>
-       <option value="4"> 桃園 </option>
-       <option value="5"> 新竹 </option>
-       <option value="6"> 苗栗 </option>
-       <option value="7"> 台中 </option>
-       <option value="8"> 雲林 </option>
-       <option value="9"> 嘉義 </option>
-       <option value="10"> 台南 </option>
-       <option value="11"> 高雄 </option>
-       <option value="12"> 屏東 </option>
-     </select>
-     <label for="floatingSelect"> 目的地 </label>
-   </div>
-
-   <div class="col-sm-4 form-floating">
-     <input type="text" class="form-control" id="floatingInputValue" name="datefilter" value="" />
-     <label for="floatingInputValue"> 出發時間區間 </label>
-   </div>
+    <div class='row container-fluid text-center'>
+     <h3> 旅遊/訂房報名 </h3>
+      <div class="col-sm-4 form-floating">
+       <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+         <option selected> 不限 </option>
+         <option value="1"> 基隆 </option>
+         <option value="2"> 台北 </option>
+         <option value="3"> 新北 </option>
+         <option value="4"> 桃園 </option>
+         <option value="5"> 新竹 </option>
+         <option value="6"> 苗栗 </option>
+         <option value="7"> 台中 </option>
+         <option value="8"> 雲林 </option>
+         <option value="9"> 嘉義 </option>
+         <option value="10"> 台南 </option>
+         <option value="11"> 高雄 </option>
+         <option value="12"> 屏東 </option>
+       </select>
+       <label for="floatingSelect"> 出發地 </label>
+     </div>
  
-   <script type="text/javascript">
-     $(function() {
-     
-       $('input[name="datefilter"]').daterangepicker({
-           autoUpdateInput: false,
-           locale: {
-               cancelLabel: 'Clear'
-           }
+     <div class="col-sm-4 form-floating">
+       <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+         <option selected> 不限 </option>
+         <option value="1"> 基隆 </option>
+         <option value="2"> 台北 </option>
+         <option value="3"> 新北 </option>
+         <option value="4"> 桃園 </option>
+         <option value="5"> 新竹 </option>
+         <option value="6"> 苗栗 </option>
+         <option value="7"> 台中 </option>
+         <option value="8"> 雲林 </option>
+         <option value="9"> 嘉義 </option>
+         <option value="10"> 台南 </option>
+         <option value="11"> 高雄 </option>
+         <option value="12"> 屏東 </option>
+       </select>
+       <label for="floatingSelect"> 目的地 </label>
+     </div>
+ 
+     <div class="col-sm-4 form-floating">
+       <input type="text" class="form-control" id="floatingInputValue" name="datefilter" value="" />
+       <label for="floatingInputValue"> 出發時間區間 </label>
+     </div>
+   
+     <script type="text/javascript">
+       $(function() {
+       
+         $('input[name="datefilter"]').daterangepicker({
+             autoUpdateInput: false,
+             locale: {
+                 cancelLabel: 'Clear'
+             }
+         });
+       
+         $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+             $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+         });
+       
+         $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+             $(this).val('');
+         });
+       
        });
-     
-       $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
-           $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-       });
-     
-       $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
-           $(this).val('');
-       });
-     
-     });
-     </script>
+       </script>
+ 
+     <div class="col-sm-4 form-floating">
+       <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+         <option selected> 0 </option>
+         <option value="1"> 1 </option>
+         <option value="2"> 2 </option>
+         <option value="3"> 3 </option>
+         <option value="4"> 4 </option>
+         <option value="5"> 5 </option>
+         <option value="6"> 6以上 </option>
+       </select>
+       <label for="floatingSelect"> 同行人數 </label>
+     </div>
+ 
+     <div class="col-sm-4 form-floating">
+       <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+         <option selected> 不限 </option>
+         <option value="1"> 腳踏車 </option>
+         <option value="2"> 觀光巴士 </option>
+         <option value="3"> 租車 </option>
+         <option value="4"> 航空 </option>
+         <option value="5"> 高鐵 </option>
+         <option value="6"> 火車 </option>
+       </select>
+       <label for="floatingSelect"> 旅程交通工具 </label>
+     </div>
 
-   <div class="col-sm-4 form-floating">
-     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-       <option selected> 0 </option>
-       <option value="1"> 1 </option>
-       <option value="2"> 2 </option>
-       <option value="3"> 3 </option>
-       <option value="4"> 4 </option>
-       <option value="5"> 5 </option>
-       <option value="6"> 6以上 </option>
-     </select>
-     <label for="floatingSelect"> 同行人數 </label>
-   </div>
-
-   <div class="col-sm-4 form-floating">
-     <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-       <option selected> 不限 </option>
-       <option value="1"> 腳踏車 </option>
-       <option value="2"> 觀光巴士 </option>
-       <option value="3"> 租車 </option>
-       <option value="4"> 航空 </option>
-       <option value="5"> 高鐵 </option>
-       <option value="6"> 火車 </option>
-     </select>
-     <label for="floatingSelect"> 旅程交通工具 </label>
-   </div>
-
-   <div class="col-sm-4 form-floating">
-    <input type="text" class="form-control" id="floatingInputValue" value="" />
-    <label for="floatingSelect"> 旅館/飯店名稱 </label>
-   </div>
-
-    <div class="col-sm-4 form-floating">
+     <div class="col-sm-4 form-floating">
       <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
         <option selected> 0 </option>
         <option value="1"> 1 </option>
@@ -774,54 +793,46 @@
         <option value="5"> 5 </option>
         <option value="6"> 6以上 </option>
       </select>
-      <label for="floatingSelect"> 入住間數 </label>
-    </div>
+      <label for="floatingSelect"> 旅館/飯店名稱 </label>
+     </div>
 
-    <div class="col-sm-1 form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-      <label class="form-check-label" for="inlineCheckbox1"> 可預訂住宿</label>
-    </div>
-    <div class="col-sm-1 form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-      <label class="form-check-label" for="inlineCheckbox2"> 防疫旅館 </label>
-    </div>
-    <div class="col-sm-1 form-check">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-      <label class="form-check-label" for="inlineCheckbox1"> 優惠行程 </label>
-    </div>
-    <div class="col-sm-1 form-check">
-      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-      <label class="form-check-label" for="inlineCheckbox1"> 美食資訊 </label>
-    </div>
-    <div class="col-sm-1 form-check">
-      <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        送出
-      </button>
-    </div>
+      <div class="col-sm-4 form-floating">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+          <option selected> 0 </option>
+          <option value="1"> 1 </option>
+          <option value="2"> 2 </option>
+          <option value="3"> 3 </option>
+          <option value="4"> 4 </option>
+          <option value="5"> 5 </option>
+          <option value="6"> 6以上 </option>
+        </select>
+        <label for="floatingSelect"> 入住間數 </label>
+      </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="8" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"> 成功通知 </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            送出資料成功~ 感謝您報名此行程
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> 關閉 </button>
-            <a target="_blank" class="btn btn-primary" href="index.html"> 繼續前進網頁 </a>
-          </div>
-        </div>
+      <div class="col-sm-1 form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1"> 可預訂住宿</label>
+      </div>
+      <div class="col-sm-1 form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2"> 防疫旅館 </label>
+      </div>
+      <div class="col-sm-1 form-check">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1"> 優惠行程 </label>
+      </div>
+      <div class="col-sm-1 form-check">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1"> 美食資訊 </label>
       </div>
     </div>
 
-  </div>
+    <button type="col-sm-1 submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        送出
+    </button>
 
-  </div>
-</section>
+    </div>
+  </section>
 
   <!--footer的區塊-->
   <footer>
