@@ -1,5 +1,13 @@
 /*calendar.html*/
 
+.card-body {
+	object-fit: fill;
+	object-position: center;
+	height: 100%;
+	overflow: hidden;
+	background-color: #75c6f6;
+}
+
 td.dt-control {
 	background: url("https://www.datatables.net/examples/resources/details_open.png") no-repeat center center;
 	cursor: pointer;
@@ -739,6 +747,8 @@ p,a,span,li,label{
 }
 img{
 	max-width:100%;
+	overflow:hidden;
+	display:block;
 }
 nav li{
 	    margin: 0 13px;
@@ -760,6 +770,17 @@ nav li{
 #intro .btn{
 	margin-top: 20px;
 }
+
+#title .container{
+	transform: translate(0, -50%);
+	top: 50%;
+}
+
+#second .container{
+	position:relative;
+	color: black;
+}
+
 .btn{
     background-color: #f05f5c;
     padding: 7px 28px;
@@ -854,7 +875,8 @@ footer{
 }
 
 footer{
-	border-top: 1px solid rgba(0,0,0,0.09);
+	background-color: rgba(118, 170, 247, 0.09);
+	border-top: 1px solid rgba(118, 170, 247, 0.09);
 }
 footer img{
 	margin-bottom: 30px;
@@ -1002,9 +1024,15 @@ footer ul{
 	display:inline-block;
 	margin-right: 4px;
 }
-header nav img{
-	width : 160px;
+
+header {
+	background-color: rgb(255, 255, 255);
 }
+
+header nav img{
+	width : max;
+}
+
 @media only screen and (max-width: 768px) {
 	#second h5 {
 	    margin-bottom: 50px;

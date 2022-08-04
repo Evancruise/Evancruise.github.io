@@ -121,3 +121,13 @@ p
 {
   font-size: 20px;
 }
+
+.carousel .carousel-item {
+  height: 300px;
+}
+
+.carousel .carousel-item img {
+  min-height: 300px;
+  max-height: 400px;
+  object-fit: cover;
+}

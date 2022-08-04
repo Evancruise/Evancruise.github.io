@@ -32,6 +32,10 @@ body
   padding: 50px;
 }
 
+img {
+  height: 100%;
+}
+
 header,
 nav,
 section,
@@ -123,4 +127,14 @@ nav li:first-child
 footer
 {
   clear: both;
+}
+
+.carousel .carousel-item {
+  height: 300px;
+}
+
+.carousel .carousel-item img {
+  min-height: 300px;
+  max-height: 400px;
+  object-fit: cover;
 }
