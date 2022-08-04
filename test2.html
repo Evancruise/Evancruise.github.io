@@ -13,17 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
-    <title> 熱門風景區 </title>
+    <title> 一日島遊 </title>
 </haed>
 
 <body> 
-    <header></header>
-
-    <!-- close button -->
-    <!-- <button type="button" class="btn-close" aria-label="Close"></button> -->
-
+    <!-- 頁首 -->
+    <header>
     <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
               <img src="pictures/logo.png">
@@ -68,10 +65,11 @@
             </form>
           </div>
         </div>
-    </nav>
+      </nav>
     </div>
     </header>
-
+    
+    <!-- 標題 -->
     <section id="intro">
       <div class="container-fluid bg-light p-5">
       <div class="container-fluid">
@@ -82,39 +80,15 @@
       </div>
       </div>
     </section>
-
-    <!-- Modal -->
     
-    <div class='col-md-8 text-center'>
+    <!-- 註冊資訊 -->
+    <section id="enroll_information"></section>
+      <div class='col-md-8 text-center'>
         <h3> 輸入註冊會員資訊 </h3>
-    </div>
-    </div>
-    <div class='row'>
-    <div class='col-md-8 offset-md-2 text-left'>
-          
-        <form>
-
-            <!--
-            <div class="row mb-3">
-              <label for="validationDefault01" class="col-sm-2 col-form-label">First name</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="validationDefault01" required>
-              </div>
-            </div>
-            <div class="row mb-3">
-              <label for="validationDefault02" class="col-sm-2 col-form-label">Last name</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="validationDefault02" required>
-              </div>
-            </div>
-            <div class="row mb-3">
-              <label for="validationDefaultUsername" class="col-sm-2 col-form-label">Username</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
-              </div>
-            </div>
-            -->
-  
+      </div>
+      <div class='row'>
+        <div class='col-md-8 offset-md-2 text-left'> 
+          <form>
             <!-- email -->
             <div class="row mb-3">
               <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
@@ -122,104 +96,63 @@
                 <input type="email" class="form-control" id="inputEmail3">
               </div>
             </div>
-  
-            <!-- number of people to join the journey -->
-            <!--
-            <fieldset class="row mb-3">
-              <legend class="col-form-label col-sm-2 pt-0"> 行程種類 </legend>
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
-                  <label class="form-check-label" for="gridRadios1">
-                    單人自由行
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                  <label class="form-check-label" for="gridRadios2">
-                    團體行
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            -->
-  
-            <!-- zone -->
-            <!--
-            <fieldset class="row mb-3">
-              <legend class="col-form-label col-sm-2 pt-0"> 旅遊地區 </legend>
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option1">
-                  <label class="form-check-label" for="gridRadios1">
-                    國內
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option2">
-                  <label class="form-check-label" for="gridRadios2">
-                    國外
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            -->
             
             <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Confirm
             </button>
-
-
       
-      <form>
-      <div class="modal fade" id="exampleModal" tabindex="8" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel"> 寄信成功 </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal fade" id="exampleModal" tabindex="8" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> 寄信成功 </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                    請到信箱檢視並重新更改密碼
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> 關閉 </button>
+                    <a target="_blank" class="btn btn-primary" href="index.html"> 繼續前進網頁 </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="modal-body">
-              請到信箱檢視並重新更改密碼
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> 關閉 </button>
-              <a target="_blank" class="btn btn-primary" href="index.html"> 繼續前進網頁 </a>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
-    </form>
+    </section>
 
     <!--footer的區塊-->
     <footer>
       <div class="container">
         <div class='row'>
-        <div class='col-md-4 text-left'>
-          <img src='pictures/logo.png' width='85'>
-          <p>讓我們邊玩樂邊欣賞每個國家的奇觀吧！</p>
-        </div>
-        <div class='col-md-4 text-left'>
-          <h4>連結</h4>
-          <ul>
+          <div class='col-md-4 text-left'>
+            <img src='pictures/logo.png' width='85'>
+            <p>讓我們邊玩樂邊欣賞每個國家的奇觀吧！</p>
+          </div>
+          <div class='col-md-4 text-left'>
+           <h4>連結</h4>
+            <ul>
               <li><a href='index.html'>主頁</a></li>
               <li><a href='all.html'>相關行程</a></li>
-          </ul>
-          <ul>
+            </ul>
+            <ul>
               <li><a href='faq.html'>常見問題</a></li>
               <li><a href='contact.html'>聯絡我們</a></li>
-          </ul>             
-        </div>
-        <div class='col-md-4 text-left'>
-          <h4> 聯絡我們 </h4>
-          <p> Line id: @12845asd <br>
-           Phone: (07) 3111-111<br>
-           E-Mail: <a href='mailto:evan1632885@gmail.com'>evan1632885@gmail.com</a>
+            </ul>             
+          </div>
+          <div class='col-md-4 text-left'>
+            <h4> 聯絡我們 </h4>
+            <p> Line id: @12845asd <br>
+                Phone: (07) 3111-111<br>
+                E-Mail: <a href='mailto:evan1632885@gmail.com'>evan1632885@gmail.com</a>
             </p>
-        </div>
+          </div>
         </div>
       </div>          
-    
     </footer>
 </body>
 </html>
