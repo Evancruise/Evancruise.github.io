@@ -58,12 +58,20 @@
                   <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"/>
                 </svg> 天氣查詢 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index2.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-range" viewBox="0 0 16 16">
-                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
-                  <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM9 8a1 1 0 0 1 1-1h5v2h-5a1 1 0 0 1-1-1zm-8 2h4a1 1 0 1 1 0 2H1v-2z"/>
-                </svg> 行程查詢及報名 </a>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-range" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM9 8a1 1 0 0 1 1-1h5v2h-5a1 1 0 0 1-1-1zm-8 2h4a1 1 0 1 1 0 2H1v-2z"/>
+                  </svg> 行程查詢及報名
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="index2.html"> 國內行程 </a></li>
+                  <li><a class="dropdown-item" href="index2_2.html"> 國外行程 </a></li>
+                </ul>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="https://www.china-airlines.com/tw/zh/booking/book-flights/flight-search"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
@@ -159,8 +167,8 @@
       <div class='row'>
         <div class='col-md-12 text-center'>
           
+          <br><br>
           <div class='row text-center'>
-            <br><br>
             <h3> 高鐵 </h3>
             <div class="btn-group1" role="group" aria-label="Basic radio toggle button group">
               <input type="north1" class="btn-check" name="btn11" id="btn11" autocomplete="off" checked>
@@ -173,6 +181,7 @@
               <label class="btn btn-outline-primary" for="btn33"> 南部 </label>
             </div>
           </div>
+          <br><br>
 
           <div class='row'>
             <div class='col-md-4 text-center'>
@@ -230,6 +239,7 @@
               </div>
             </div>
           </div>
+
           <br><br>
           <div class='row text-center'>
             <h3> 火車 </h3>
@@ -247,6 +257,7 @@
               <label class="btn btn-outline-primary" for="btn444"> 東部 </label>
             </div>
           </div>
+          <br><br>
 
           <div class='row'>
             <div class='col-md-4 text-center'>
@@ -305,7 +316,6 @@
           </div>
       
           <br><br>
-          
           <div class='col-md-12 text-center'>
             <h3> 一般公路 </h3>
             <div class="btn-group3" role="group" aria-label="Basic radio toggle button group">  
@@ -319,6 +329,7 @@
               <label class="btn btn-outline-primary" for="btn5555"> 離島 </label>
             </div>
           </div>
+          <br><br>
 
           <div class='row'>
             <div class='col-md-4 text-center'>
@@ -383,59 +394,78 @@
   <!--飯店照片的區域-->
   <section id='latest'>       
     <div class="container">
+
       <div class='row'>
         <div class='col-md-12 text-center'>
           <h3> 熱門搜尋飯店 </h3>
-        <div class='row'>
-        <div class='col-md-4 text-left'>
-          <div class='outer'>
-            <a href="https://www.tripadvisor.com.tw/Attraction_Review-g29221-d560701-Reviews-Barrier_Reef-Molokai_Hawaii.html">
-            <div class='upper'>
-              <img src='pictures/hotel1.jpg'>
-            </div>
-            <div class='lower'>
-              <span><i class="fas fa-address-book"></i> 捷絲旅 宜蘭礁溪館</span><br>
-              <span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
-                <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
-              </svg> 2500 </span>
-            </div>
-            </a>
-          </div>
-        </div>
-          
-        <div class='col-md-4 text-left'>
-          <div class='outer'>
-            <a href="https://www.tripadvisor.com.tw/Attraction_Review-g198564-d190837-Reviews-Schloss_Neuschwanstein-Schwangau_Upper_Bavaria_Bavaria.html">
-            <div class='upper'>
-              <img src='pictures/2.jpg'>
-            </div>
-            <div class='lower'>
-              <span><i class="fas fa-address-book"></i> 墾丁長灘休閒飯店 </span><br>
-              <span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
-                <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
-              </svg> 4100 </span>
-            </div>
-            </a>
-          </div>
-        </div>
+
+          <div class="btn-group2" role="group" aria-label="Basic radio toggle button group">
+            <input type="north1" class="btn-check" name="btn111" id="btn111" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btn111"> 北部 </label>
             
-        <div class='col-md-4 text-left'>
-          <div class='outer'>
-            <a href="https://www.tripadvisor.com.tw/Tourism-g45937-Elko_Nevada-Vacations.html">
-            <div class='upper'>
-              <img src='pictures/3.jpg'>
+            <input type="middle1" class="btn-check" name="btn222" id="btn222" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btn222"> 中部 </label>
+            
+            <input type="sourth1" class="btn-check" name="btn333" id="btn3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btn333"> 南部 </label>
+        
+            <input type="east1" class="btn-check" name="btn444" id="btn444" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btn444"> 東部 </label>
+          </div>
+
+          <br><br>
+
+          <div class='row'>
+            <div class='col-md-4 text-left'>
+              <div class='outer'>
+                <a href="https://www.tripadvisor.com.tw/Attraction_Review-g29221-d560701-Reviews-Barrier_Reef-Molokai_Hawaii.html">
+                <div class='upper'>
+                  <img src='pictures/hotel1.jpg'>
+                </div>
+                <div class='lower'>
+                  <span><i class="fas fa-address-book"></i> 捷絲旅 宜蘭礁溪館</span><br>
+                  <span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                  <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                  </svg> 2500 </span>
+                </div>
+                </a>
+              </div>
             </div>
-            <div class='lower'>
-              <span><i class="fas fa-address-book"></i> 慕舍酒店 </span><br>
-              <span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+          
+            <div class='col-md-4 text-left'>
+              <div class='outer'>
+                <a href="https://www.tripadvisor.com.tw/Attraction_Review-g198564-d190837-Reviews-Schloss_Neuschwanstein-Schwangau_Upper_Bavaria_Bavaria.html">
+                <div class='upper'>
+                  <img src='pictures/2.jpg'>
+                </div>
+                <div class='lower'>
+                  <span><i class="fas fa-address-book"></i> 墾丁長灘休閒飯店 </span><br>
+                  <span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                  <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                  </svg> 4100 </span>
+                </div>
+                </a>
+              </div>
+            </div>
+            
+            <div class='col-md-4 text-left'>
+              <div class='outer'>
+                <a href="https://www.tripadvisor.com.tw/Tourism-g45937-Elko_Nevada-Vacations.html">
+                <div class='upper'>
+                  <img src='pictures/3.jpg'>
+                </div>
+                <div class='lower'>
+                  <span><i class="fas fa-address-book"></i> 慕舍酒店 </span><br>
+                  <span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
                 <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
-              </svg> 5200 </span>
+                </svg> 5200 </span>
+              </div>
+              </a>
             </div>
-            </a>
           </div>
         </div>
-      </div>
-    <div>
+      <div>
+    </div>
   </section>
   
   <br><br>
@@ -674,10 +704,12 @@
         });    
   </script>
 
+  <br><br>
+
   <!-- 旅遊報名區塊 -->
   <section id='search_table'>
     <div class='row container-fluid text-center'>
-     <h3> 旅遊/訂房報名 </h3>
+     <h2> 旅遊/訂房報名 </h2>
      <div class="col-sm-4 form-floating">
       <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
        <option selected> 不限 </option>
@@ -832,6 +864,8 @@
      </div>
     </div>
   </section>
+
+  <br><br>
 
   <!--footer的區塊-->
   <footer class="container-fuild d-block w-100">
