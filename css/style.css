@@ -1,5 +1,68 @@
 /*calendar.html*/
 
+table tr td {
+	text-align: center;
+	border: 1px solid black;
+	width:100%;
+	height:50px;
+	padding:15px;
+}
+
+.order .row {
+	padding: 10px;
+	box-shadow: 5px 5px 5px rgb(140, 140, 140);
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	border-radius: 20px;
+}
+
+.order_image .row .image .img{
+	height: 250vh;
+}
+
+.order .row form .inputbox input, .order .row form .inputbox .form-floating .floatingSelect, .order .row form textarea{
+	padding: 10px;
+	margin: 10px;
+	font-size: 20px;
+	color: black;
+	text-transform: solid black;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+
+.order .row form .btn3 {
+	font-size: 30px;
+	padding: 10px;
+	width: 100%;
+	border-radius: 20px;
+	color: chocolate;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 5px solid chocolate;
+}
+
+.order .row form .btn3:hover {
+	background-color: chocolate;
+	color: white;
+	box-shadow: inset: 400px 0 0 0 chocolate;
+	transition: 1s all;
+}
+
+hr {
+	-moz-border-bottom-colors: black;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+	border-style: solid none;
+	border-width: 10px 0;
+	margin: 5px 0;
+}
+
 .card-body {
 	object-fit: fill;
 	object-position: center;
